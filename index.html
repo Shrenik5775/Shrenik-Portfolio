@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrenik Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d3fba10bf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="lg"> <span>S</span>hrenik<span>.</span></h1>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Expertise</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Developer</p><br>
+            <h1>Hi, I am <br><span>Shrenik Patil</span><br>From Bangalore,<br>India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -------------About------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/file.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring Developer | AI/ML Enthusiast | Problem Solver
+                    I am a passionate tech enthusiast with a strong foundation in 
+                    Python, DBMS, SQL, and the Django framework.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('achievements')">Achievements</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Programming</span><br>Basics || Data Structure || Exception Handling || Object Oriented Programming || Pandas|| Numpy|| Python Django.</li>
+                            <li><span>SQL</span><br>Basics || joins || conditions.</li>
+                            <li><span>Java Programming</span><br>Basics || Data structure || Exception Handling.</li>
+                            <li><span>C# Programming</span><br>Basics || Data structure || Exception Handling.</li>
+                            <li><span>Web Desiging</span><br>HTML || CSS || Java Script || Bootstrap.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship(2024)</span><br>Worked in "AiVolved Technology(Pvt)Ltd" as a Intern
+                                 and working on Artifical Intelligence and Machine Learning Technology. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>MCA at Dr.AIT, Bangalore (85.5 per)</li>
+                            <li><span>2022</span><br>BCA at KLE's BK College, Chikodi (81.52 per)</li>
+                            <li><span>2019</span><br>Commerce at SHV College, Ugar khurd (80 per)</li>
+                            <li><span>2017</span><br>SSLC at SHV School, Ugar khurd (77.92 per)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>AMAZE 2K20:</span><br>Secured 1st  prize in Coding at inter Collegiate fest held at KLE's BCA College, Athani.</li>
+                            <li><span>EMINENCE 1.0 2K20</span><br>Secured 1st  prize in Coding at inter Collegiate fest held at KLE's BCA College, Gokak.</li>
+                            <li><span>QUESTERS 2K21</span><br>Participated in National level Coding competition organised by GIT, Belgaum.</li>
+                        </ul>
+                    </div>
+   
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -----------Services--------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">Expertise</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #FFD43B;"></i>
+                <h2>Web Desiging</h2>
+                <p>Web Design involves creating the visual elements and layout of a website.
+                </p>
+                <a href="https://www.w3schools.com/howto/howto_website.asp/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
+                <h2>Python Developer</h2>
+                <p>As a python Developer, you can do everything from web or game development to quantitative analysis.
+                </p>
+                <a href="https://www.w3schools.com/python/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" style="color: #FFD43B;"></i>
+                <h2>SQL</h2>
+                <p>SQL(Structured query language)is standerd language for database creation and manipulation
+                </p>
+                <a href="https://www.w3schools.com/SQL/">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- ---------portfolio------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Air1.jpg" >
+                <div class="layer"> 
+                    <h3>Fly-Way</h3>
+                    <p>Fly-way is an a Airline management system developed 
+                        using Python Django.
+                    </p>
+                    <a href="https://github.com/Shrenik5775/Fly_way/"><i class="fa-solid fa-share-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/raw1.jpg" >
+                <div class="layer"> 
+                    <h3>Raw-Fresh</h3>
+                    <p>raw-Fresh is an a online buying and selling Meats.developed 
+                        using Python Django.
+                    </p>
+                    <a href="https://github.com/Shrenik5775/Raw_Fresh/"><i class="fa-solid fa-share-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cht.jpeg" >
+                <div class="layer"> 
+                    <h3>Mental health Chatbot</h3>
+                    <p>Mental health Chatbot is an tool which helps Society to reduce menatl stress
+                       developed by using Machine learning technology.
+                    </p>
+                    <a href="https://github.com/Shrenik5775/Mental-Health-Chatbot/"><i class="fa-solid fa-share-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Shrenik5775?tab=repositories/"class="btn">See more</a>
+    </div>
+  </div>
+
+
+
+  <!-- -----------------Contact------------ -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>shrenikpatil2001@gmail.com</p>
+                <p><i class="fa-duotone fa-solid fa-phone"></i>+91 8904349060</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shrenikpatil/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shrenik__sp/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/shrenik.a.patil.7/"><i class="fa-brands fa-facebook" ></i></a>
+                    <a href="https://github.com/Shrenik5775/"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/Shrenik_CV_DEC.pdf" class="btn btn2"Download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name"placeholder="Your Name" required>
+                    <input type="email"name="Email"placeholder="Your Email" required>
+                    <textarea name="Message"row="6"placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>This is my Portfolio Website <i class="fa-sharp fa-solid fa-heart" style="color: #ea0b2c;"></i>@Shrenik Patil</p>
+    </div>
+   </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<script>
+
+    var sidmeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidmeu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidmeu.style.right = "-200px";
+    }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3rW1usYva0Mx5ZpQB9ysGVLtFHJ5SnYF7MA4yGvTs4XjZ3_EXlZ0G2SftyBZ7nxzCJQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
